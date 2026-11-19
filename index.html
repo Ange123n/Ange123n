@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Evidencias | Luis Ángel Navarrete Sanchez</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Encabezado / Datos Personales */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      background: var(--surface);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .profile-pic {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 3px solid var(--accent);
+      background-color: #0f172a;
+    }
+
+    .personal-info {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .personal-info h1 {
+      font-size: 1.85rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .personal-info .role {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 0.85rem;
+    }
+
+    .contact-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+      color: var(--accent);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Grid de habilidades y cursos */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.65rem;
+    }
+
+    .tag {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    .clean-list {
+      margin-left: 1.2rem;
+      margin-top: 0.5rem;
+      color: var(--text);
+      font-size: 0.94rem;
+    }
+
+    .clean-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Proyectos */
+    .project-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.1rem;
+      font-size: 0.9rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 1. FOTOGRAFÍA Y DATOS PERSONALES -->
+    <header>
+      <img src="perfil.jpg" alt="Fotografía de Luis Ángel Navarrete Sanchez" class="profile-pic" />
+      <div class="personal-info">
+        <h1>Luis Ángel Navarrete Sanchez</h1>
+        <p class="role">Desarrollador de Software</p>
+        <p>Desarrollador enfocado en soluciones web y gestión de bases de datos relacionales, con sólida base en redes empresariales, soporte técnico y resolución de problemas.</p>
+        <ul class="contact-list">
+          <li>📍 México</li>
+          <li>📞 5579248638</li>
+          <li>✉️ <a href="mailto:luis.ns.angel@gmail.com">luis.ns.angel@gmail.com</a></li>
+          <li>💻 <a href="https://github.com/[TU-USUARIO-GITHUB]" target="_blank">github.com/[TU-USUARIO-GITHUB]</a></li>
+          <li>🌐 Idiomas: Español (Nativo) · Inglés (Básico)</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 2. ESTUDIOS Y CURSOS -->
+    <section id="estudios">
+      <h2>Estudios y Formación Académica</h2>
+      <div class="card">
+        <h3>Ingeniería en Desarrollo y Gestión de Software</h3>
+        <p class="meta">Universidad Tecnológica Fidel Velázquez, MX</p>
+      </div>
+      <div class="card">
+        <h3>TSU en Desarrollo de Software Multiplataforma</h3>
+        <p class="meta">Universidad Tecnológica Fidel Velázquez, MX</p>
+      </div>
+      <div class="card">
+        <h3>Profesional Técnico Bachiller en Soporte y Mantenimiento de Equipo de Cómputo</h3>
+        <p class="meta">Formación Técnica de Nivel Medio Superior</p>
+      </div>
+
+      <div class="card">
+        <h3>Cursos y Entrenamiento Especializado</h3>
+        <ul class="clean-list">
+          <li><strong>CCNA:</strong> Enterprise Networking, Security, and Automation (ENSA)</li>
+          <li>Desarrollo Web y Backend con <strong>PHP</strong></li>
+          <li>Diseño y Maquetación Web con <strong>CSS</strong></li>
+          <li>Administración y Consultas en <strong>MySQL</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. LENGUAJES, TECNOLOGÍAS/PLATAFORMAS Y BASES DE DATOS -->
+    <section id="habilidades">
+      <h2>Stack Técnico y Competencias</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Lenguajes de Programación</h3>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tecnologías y Plataformas</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Git y GitHub</span>
+            <span class="tag">Redes (CCNA ENSA)</span>
+            <span class="tag">Soporte y Mantenimiento PC</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Bases de Datos</h3>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 1rem;">
+        <h3>Habilidades Profesionales</h3>
+        <div class="tags">
+          <span class="tag">Trabajo independiente y en equipo</span>
+          <span class="tag">Resolución de problemas</span>
+          <span class="tag">Adaptabilidad y aprendizaje continuo</span>
+          <span class="tag">Diagnóstico y mantenimiento de hardware/software</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROYECTOS (MÍNIMO 3 CON ENLACE A GITHUB) -->
+    <section id="proyectos">
+      <h2>Proyectos y Experiencia Aplicada</h2>
+      <div class="grid-3">
+
+        <article class="card">
+          <h3>1. Agenda Inteligente</h3>
+          <p class="meta">Stack: HTML, CSS, PHP, MySQL</p>
+          <p>CREACION DE AGENDA INTELIGENTE PARA MEJORAR LAS ESCULAS</p>
+          <div class="project-links">
+            <a href=https://github.com/Dxluis2/agenda-inteligente.git target="_blank">Repositorio en GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>2. recetas</h3>
+          <p class="meta">Stack: [ej. Java, MySQL]</p>
+          <p>[pagina de recetas de comida.]</p>
+          <div class="project-links">
+            <a href="https://github.com/elimancillas/RecetasNavide-as.git" target="_blank">Repositorio en GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>3. inico de la pagina. Aplicación Web CRUD]</h3>
+          <p class="meta">Stack: [ej. PHP, HTML, CSS, MySQL]</p>
+          <p>[Pagina de hola mundo.]</p>
+          <div class="project-links">
+            <a href="https://github.com/Ange123n/hola.git" target="_blank">Repositorio en GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Luis Ángel Navarrete Sanchez — Portafolio de Evidencias</p>
+    </footer>
+
+  </div>
+</body>
+</html>
